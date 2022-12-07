@@ -1,17 +1,14 @@
-import './App.css'
-import NavBar from './components/NavBar/NavBar'
-import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
+import NavBar from "./components/NavBar/NavBar"
 import 'bootstrap/dist/css/bootstrap.min.css'
+import CartWidget from "./components/CartWidget/CartWidget"
 
 function App() {
 
   return (
-    <div className="App">
-
+    <div>
       <NavBar />
-      <br />
-      <ItemListContainer greeting={ '¡Saludos!' } />
-      
+      <ItemListContainer greeting={ '¡Saludos!' }/>
     </div>
   )
 }
