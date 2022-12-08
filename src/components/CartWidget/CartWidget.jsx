@@ -1,6 +1,7 @@
 import { IconContext } from 'react-icons/lib'
 import { TfiShoppingCart } from 'react-icons/tfi'
 
+
 const CartWidget = () => {
     return (
       <div>
@@ -12,4 +13,4 @@ const CartWidget = () => {
     )
   }
   
-  export default CartWidget
+export default CartWidget

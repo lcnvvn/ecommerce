@@ -1,4 +1,5 @@
-import { Container, Nav, Navbar } from "react-bootstrap"
+import { Button, Container, Nav, Navbar } from "react-bootstrap"
+import { Link, NavLink } from "react-router-dom"
 import CartWidget from "../CartWidget/CartWidget"
 
 
@@ -6,16 +7,15 @@ function NavBar() {
     return (
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">E-commerce</Navbar.Brand>
+          <NavLink to="/" className='btn btn-outline-light'>E-commerce</NavLink> 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#">Categoría 1</Nav.Link>
-            <Nav.Link href="#">Categoría 2</Nav.Link>
-            <Nav.Link href="#">Categoría 3</Nav.Link>
+            <NavLink to="/category/tazas" className='btn btn-dark'>Tazas</NavLink>
+            <NavLink to="/category/vasos" className='btn btn-dark'>Vasos</NavLink>
           </Nav>
           <Nav>
-            <Nav.Link href="#"><CartWidget /></Nav.Link>
+            <NavLink href="#"><CartWidget /></NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>
