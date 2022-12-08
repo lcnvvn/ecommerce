@@ -1,2 +1,2 @@
 
-![image](public/assets/sample.gif)
+![image](public/sample.gif)
